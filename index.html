@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="style.css" rel="stylesheet">
+    <script src ="sql.js"> </script>
+    <title>Document</title>
+    
+    
+    
+    
+         <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+        </script>
+
+        <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+         </script>
+
+        
+</head>
+<body>
+  
+    
+
+
+
+
+    <div class="paragraph">
+    <p>
+        A ball is thrown upwards with an initial velocity of 8.00 m/s 
+        at an angle of 30 degrees with horizontal from a cliff of height 5.00 m
+        above the ground. The ball lands on the ground. How far from the 
+        base of the cliff does the ball land if you are on a planet with half the 
+        mass of earth but the same radius?
+    </p>
+    </div>
+
+    <div class="database">  
+        <button onclick="run()"> DataBase </button>
+    <p id="test"></p>
+
+    </div>
+
+
+
+
+
+
+
+    <div class="container">
+    <div class="container-1">
+    <ul>
+        <label > <b>Given</b></label>
+        <li> $V_0 =$ Intial Velocity = $8$ $m/s$</li>
+        <li>$h =$ Height = $5$ $m$</li>
+        <li>$\theta= 30^{\circ}$</li>
+        <li>$m =$ Mass = $\frac{1}{2}$ Mass of Earth</li>
+        <label> <b>Derived</b></label>
+        <li>$V_{0x} =$ Initial Velocity x direction = 8cos(30) = $6.9$ $m/s$ </li>
+        <li>$V_{0y} =$ Initial Velocity y direction = 8sin(30) = $4$ $m/s$</li>
+        <li>$\Delta_y =$ Change in y = $-5$ $m$ </li> 
+    </ul>
+    </div>
+    <div class="container-2">
+    <div>  
+        <label >Initial Velocity</label>
+        <input type="text"
+         name="firstName"
+         placeholder="Enter Initial Velocity"
+         id = "InV">
+    </div>
+    <div>
+        <Lable>Height</Lable>
+        <input type="text" 
+        name="height" 
+        placeholder="Enter Height" 
+        id="h">
+        
+    </div>
+
+    <div>
+        <Label>Angle</Label>
+        <input type="text" 
+        name="angle"
+        placeholder="Enter Angle"
+        id="angl">
+        
+    </div>
+    <button onclick="calculateChangeInX()"> Calculate </button>
+        <h3> The answer is:  <span id="solution"></span></h3>
+    
+    </div>
+    </div>
+
+ 
+    <div class="container-output" id="container-output">   
+        
+    </div>
+
+   
+
+
+
+
+
+
+
+
+
+
+
+    <script src ="home.js"> </script>
+   
+</body>
+</html>
